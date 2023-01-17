@@ -1,0 +1,193 @@
+.body {
+    margin: 0 auto;
+    max-width: 100%;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 51px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo-caption {
+    color: #fff;
+    font-size: 29px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+
+.logo-caption:hover {
+    color: #f26522;
+    transition: 0.5s;
+}
+
+.logo-caption-uppercase {
+    font-size: 29px;
+    font-weight: 700;
+}
+
+.logo-caption-regular {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.logo-img {
+    display: block;
+}
+
+.logo-img-hover {
+    display: none;
+}
+
+.logo:hover .logo-img {
+    display: none;
+}
+
+.logo:hover .logo-img-hover {
+    display: block;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.mail-to {
+    color: #fff;
+    margin-bottom: 19px;
+    font-size: 18px;
+}
+
+.mail-to:hover {
+    color: #f26522;
+    transition: 0.5s;
+}
+
+.call-back-number {
+    color: #fff;
+    font-size: 18px;
+}
+
+.call-back-number:hover {
+    color: #f26522;
+    transition: 0.5s;
+}
+
+.main {
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    list-style: none;
+    gap: 10px 62px;
+    padding: 0;
+}
+
+.list-item {
+}
+.lis-item-a {
+}
+.block {
+    position: relative;
+}
+
+.picture {
+    height: 220px;
+}
+.more {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+    width: 100%;
+    background: #f26522;
+    padding: 0 16px;
+}
+
+.more p {
+    color: #fff;
+}
+
+.hidden {
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 0;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.price-from {
+    font-size: 10px;
+    position: relative;
+    padding-top: 7px;
+}
+.price-value {
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 20px;
+    margin-top: 8px;
+}
+.price-details {
+    margin: 0;
+    padding-top: 29px;
+}
+
+.price-details::after {
+    content: url("../img/white-arrow.svg");
+    color: #fff;
+    width: 5px;
+    height: 10px;
+    padding-left: 16px;
+}
+.picture-description {
+    color: #fff;
+    text-align: center;
+}
+
+.information {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.list-item:hover .hidden {
+    height: 55px;
+    padding: 5px;
+}
+
+.list-item:hover .price-details {
+    color: #f26522;
+}
